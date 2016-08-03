@@ -16,4 +16,6 @@ RUN mkdir /opt && \
 
 ENV JAVA_HOME /usr/lib/jvm/default-jvm
 ENV PATH ${PATH}:/opt/apache-maven/bin:/aws:/opt/node_modules/.bin/
+ENV NODE_PATH=/opt/node_modules:$NODE_PATH
+
 
