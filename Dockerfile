@@ -5,7 +5,7 @@ ENV MAVEN_VERSION 3.3.9
 
 RUN mkdir /opt && \
         cd /opt && \
-        apk -Uuv add groff less python py-pip openjdk8 curl git && \
+        apk -Uuv add groff less python py-pip openjdk8 curl git util-linux && \
         curl -jksSL http://apache.mindstudios.com/maven/maven-${MAVEN_VERSION_MAJOR}/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
         | tar -xzf - -C /opt &&\
         ln -s /opt/apache-maven-${MAVEN_VERSION} /opt/apache-maven &&\
